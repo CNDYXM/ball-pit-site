@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, viewport-fit=cover">
+<title>斗球场 BALL PIT v0.4.4</title>
+<meta name="description" content="斗球场 BALL PIT v0.4.4：把 2–8 颗技能各异的小球扔进战场，让它们自己打。像素街机风 2D 自动乱斗，含能量、召唤物、三角地图与随机障碍。">
+<meta name="theme-color" content="#0A0910">
+<meta name="color-scheme" content="dark">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' fill='%230A0910'/%3E%3Ccircle cx='16' cy='16' r='11' fill='%23FF6B1A'/%3E%3Ccircle cx='13' cy='12' r='3' fill='%23FFC24B'/%3E%3C/svg%3E">
+<link rel="stylesheet" href="css/fonts.css?v=f50ff9a2">
+<link rel="stylesheet" href="css/style.css?v=c0bf7684">
+</head>
+<body data-screen="home">
+<div class="cabinet" id="cabinet">
+  <header class="marquee" id="marquee" aria-label="街机柜头"></header>
+  <main id="screens" class="screens">
+    <section id="screen-home" class="screen screen--home" aria-label="大厅"></section>
+    <section id="screen-prep" class="screen screen--prep" aria-label="战场准备" hidden></section>
+    <section id="screen-codex" class="screen screen--codex" aria-label="斗士" hidden></section>
+    <section id="screen-maps" class="screen screen--maps" aria-label="地图图鉴" hidden></section>
+    <section id="screen-guide" class="screen screen--guide" aria-label="玩法介绍" hidden></section>
+    <section id="screen-patches" class="screen screen--patches" aria-label="更新" hidden></section>
+    <section id="screen-settings" class="screen screen--settings" aria-label="设置" hidden></section>
+    <section id="screen-roster" class="screen screen--roster" aria-label="选择斗士" hidden></section>
+    <section id="screen-tournament" class="screen screen--tournament" aria-label="排位赛赛程" hidden></section>
+    <section id="screen-battle" class="screen screen--battle" aria-label="战场" hidden>
+      <div class="arena-frame"><canvas id="arena" aria-label="斗球场战场" role="img"></canvas></div>
+    </section>
+    <section id="screen-result" class="screen screen--result" aria-label="战斗结果" hidden></section>
+  </main>
+  <nav id="tabbar" class="tabbar" aria-label="主导航" hidden></nav>
+</div>
+<div id="toast" class="toast" role="status" aria-live="polite" hidden></div>
+<div id="fx-tip" class="fx-tip" role="tooltip" hidden></div>
+<div id="modal-root"></div>
+<noscript><p class="noscript">这个球场需要 JavaScript 才能开打。</p></noscript>
+<script src="js/data.js?v=5c0d1754"></script>
+<script src="js/tournament.js?v=0c87b0f5"></script>
+<script src="js/sim.js?v=eb093674"></script>
+<script src="js/faces.js?v=36d9c7ae"></script>
+<script src="js/render.js?v=c226d85e"></script>
+<script src="js/audio.js?v=ac35e9a2"></script>
+<script src="js/lore.js?v=d64cbb55"></script>
+<script src="js/ui.js?v=68c87954"></script>
+<script src="js/main.js?v=4454ef93"></script>
+</body>
+</html>
+
+

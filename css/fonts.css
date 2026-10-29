@@ -1,0 +1,21 @@
+/* 像素字体 — 由 Lead 维护。子集化后文件位于 assets/fonts/ */
+@font-face {
+  font-family: 'BallPixel';
+  src: url('../assets/fonts/ball-pixel.woff2?v=589f2015') format('woff2');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'BallArcade';
+  src: url('../assets/fonts/ball-arcade.woff2?v=5bd44fee') format('woff2');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+:root {
+  --font-pixel-han: 'BallPixel', 'Microsoft YaHei', 'PingFang SC', sans-serif;
+  --font-pixel-en: 'BallArcade', 'BallPixel', 'Consolas', monospace;
+  --font-body: 'Microsoft YaHei', 'PingFang SC', 'Noto Sans SC', 'Segoe UI', sans-serif;
+}
